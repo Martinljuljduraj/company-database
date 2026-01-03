@@ -1,0 +1,9 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
+LOAD DATA LOCAL INFILE '/Users/martinlulgjuraj/Downloads/company/dloc.dat'
+INTO TABLE dept_locations
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+SET FOREIGN_KEY_CHECKS = 1;

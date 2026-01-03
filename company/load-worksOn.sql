@@ -1,0 +1,9 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
+LOAD DATA LOCAL INFILE '/Users/martinlulgjuraj/Downloads/company/worksOn.dat'
+INTO TABLE works_on
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+SET FOREIGN_KEY_CHECKS = 1;
